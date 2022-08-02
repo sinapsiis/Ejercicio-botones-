@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <!--  esta forma de dejar el div fuera y el enlace dentro
+                      crea una capa con un enlace dentro pero no simula un botón
+                       ya que la capa  no es activa al enlace. Solo enlaza desde el texto
+                      En el caso de los siguientes enlaces en los que la capa esta dentro del enlace,
+                    toda la capa será activa simulando un botón-->
+                <!--
+                    <div>
+                    <a href="http://www.google.com">
+                            IR A GOOGLE
+                    </a>
+                </div>
+                -->
+                <a href="http://www.google.com">
+                    <div id="activo">
+                            saltar a Google
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.google.com">
+                    <div>
+                            saltar a Google
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a href="http://www.google.com">
+                    <div>
+                            brincar a Google
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.google.com">
+                    <div>
+                            anar a Google
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+<p>
+    <span>1</span>
+    <span>2 <p> otro parrafo en azul</p></span>
+    <span>3</span>
+    <!--  en este caso <p> hola </p> no es hijo directo
+         por lo que no lo colerea en rojo-->
+    <span>4 <p> hola</p></span>
+
+      
+</p>
+</body>
+</html>
